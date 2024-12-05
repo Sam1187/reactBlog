@@ -1,1 +1,1 @@
-export const BASE_URL = process.env.REACT_APP_API_URL;
+export const BASE_URL = "https://reactblog-5l05.onrender.com"

@@ -165,7 +165,7 @@ function Addpost(props) {
           <button onClick={onClickRemoveImage}>Delete image</button>
           <hr />
           <div className="post-image">
-            <img src={`${BASE_URL}${imageUrl}`} alt="Uploaded" />
+            <img src={`https://reactblog-5l05.onrender.com/${imageUrl}`} alt="Uploaded" />
           </div>
         </>
       )}
