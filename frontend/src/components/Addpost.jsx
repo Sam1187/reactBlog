@@ -2,6 +2,7 @@ import { useState, useCallback, useMemo, useRef, useEffect } from "react";
 import Header from "./parts/Header";
 import Footer from "./parts/Footer";
 import axios from "../../axios";
+import { BASE_URL } from "../assets/baseURL";
 import { useNavigate, Navigate, Link, useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { selectIsAuth } from "../redux/features/user/userSlice";
@@ -164,7 +165,7 @@ function Addpost(props) {
           <button onClick={onClickRemoveImage}>Delete image</button>
           <hr />
           <div className="post-image">
-            <img src={`http://localhost:7530${imageUrl}`} alt="Uploaded" />
+            <img src={`${BASE_URL}${imageUrl}`} alt="Uploaded" />
           </div>
         </>
       )}

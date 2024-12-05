@@ -30,7 +30,7 @@ const connectDB = async () => {
 };
 
 const app = express();
-const PORT = 7530 || process.env.PORT;
+const PORT = process.env.PORT || 7530;
 
 const storage = multer.diskStorage({
   destination: (_, __, cb) => {
